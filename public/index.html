@@ -1,0 +1,1480 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="易行汽车">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/icon-144x144.png">
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <title>易行汽车</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/static/css/base.css" media="all">
+  <link rel="stylesheet" href="/static/css/app.css" media="all">
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+			<script src="https://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+  <link rel="stylesheet" href="/static/css/flexslider.css" media="all">
+  <script type="text/javascript" src="/static/js/topic.js"></script>
+</head>
+
+<body class="page-home">
+  <header class="header">
+    <div class="topbar">
+      <div class="container">
+        <ul class="site-nav topmenu">
+          <li>
+            <a class="site-touch" href="javascript:;"><i class="fa">&#xe705;</i> 手机版<div class="topbar-popover"><div class="topbar-popover-content"><img src="/static/groupon/pc/images/qrcode.png"></div></div></a>
+          </li>
+          <li>
+            <a class="site-weixin" href="javascript:;"><i class="fa">&#xe602;</i> 关注微信<div class="topbar-popover"><div class="topbar-popover-content"><img src="/static/groupon/pc/images/qrcode.png"></div></div></a>
+
+          </li>
+        </ul>
+        易行汽车，易行天下 - 中国领先的汽车电商平台
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="logo">
+        <a href="http://www.yixingauto.com" title="易行汽车"><img src="/static/groupon/pc/images/logo.png">易行汽车</a>
+      </h1>
+      <div class="change-city"><i class="fa">&#xe648;</i> <span class="current-city">石家庄<div class="change-city-popover"><div class="change-city-popover-content"><a title="石家庄汽车团购" href="" target="_blank">石家庄</a> <a title="天津汽车团购" href="" target="_blank">天津</a></div></div></span></div>
+      <div class="promise"></div>
+      <div class="search">
+        <div class="search-box">
+          <input type="text" id="searchtext" name="search" placeholder="请输入关键词">
+          <a class="btn-search"><i class="fa">&#xe61d;</i></a>
+        </div>
+        <div class="hot-car">
+          <dt>热门车型：</dt>
+          <dd><a href="/brand/1.html">奥迪</a></dd>
+          <dd><a href="/brand/2.html">别克</a></dd>
+          <dd><a href="/brand/3.html">北京汽车</a></dd>
+          <dd><a href="/brand/4.html">北汽威旺</a></dd>
+          <dd><a href="/brand/5.html">北汽幻速</a></dd>
+          <dd><a href="/brand/6.html">北汽新能源</a></dd>
+          <dd><a href="/brand/7.html">奔腾</a></dd>
+          <dd><a href="/brand/8.html">奔驰</a></dd>
+        </div>
+      </div>
+    </div>
+    <div class="site-navbar">
+      <div class="container">
+        <div class="header-panel">
+          <div class="header-panel-title">
+            <i class="fa">&#xe618;</i> 按品牌车型选择
+          </div>
+          <div class="header-panel-box">
+            <div class="header-reg">
+              <div class="header-reg-title">
+                <p style="text-align: center;font-weight: 700;">看车 比价 买车 特卖会轻松搞定</p>
+                <p style="text-align: center;font-size: 12px;">立即报名预约河北石家庄体育馆车博会</p>
+                <p style="font-size:12px;">您的意向车型：</p>
+              </div>
+              <div class="header-reg-form" id="form_1">
+                <p class="brand-select">
+                  <span>
+                    <select name="brand_id" class="ipt" id="brand_id" onchange="load_series(this.value,1)">
+                      <option>请选择品牌</option>
+                      <option value="1">A 奥迪</option>
+                      <option value="2">B 别克</option>
+                      <option value="3">B 北京汽车</option>
+                      <option value="4">B 北汽威旺</option>
+                      <option value="5">B 北汽幻速</option>
+                      <option value="6">B 北汽新能源</option>
+                      <option value="7">B 奔腾</option>
+                      <option value="8">B 奔驰</option>
+                      <option value="9">B 宝沃</option>
+                      <option value="10">B 宝马</option>
+                      <option value="11">B 宝骏</option>
+                      <option value="12">B 宾利</option>
+                      <option value="13">B 本田</option>
+                      <option value="14">B 标致</option>
+                      <option value="15">B 比亚迪</option>
+                      <option value="16">C 昌河</option>
+                      <option value="17">C 长城</option>
+                      <option value="18">C 长安</option>
+                      <option value="19">C 长安商用</option>
+                      <option value="20">D DS</option>
+                      <option value="21">D 东南</option>
+                      <option value="22">D 东风小康</option>
+                      <option value="23">D 东风风度</option>
+                      <option value="24">D 东风风神</option>
+                      <option value="25">D 东风风行</option>
+                      <option value="26">D 大众</option>
+                      <option value="27">D 道奇</option>
+                      <option value="28">F 丰田</option>
+                      <option value="29">F 福特</option>
+                      <option value="30">F 福田</option>
+                      <option value="31">F 菲亚特</option>
+                      <option value="32">G 广汽传祺</option>
+                      <option value="33">G 观致</option>
+                      <option value="34">H 华泰</option>
+                      <option value="35">H 华颂</option>
+                      <option value="36">H 海马</option>
+                      <option value="37">H 红旗</option>
+                      <option value="38">J JEEP</option>
+                      <option value="39">J 吉利汽车</option>
+                      <option value="40">J 捷豹</option>
+                      <option value="41">J 江淮</option>
+                      <option value="42">J 江铃</option>
+                      <option value="43">J 金杯</option>
+                      <option value="44">K 克莱斯勒</option>
+                      <option value="45">K 凯迪拉克</option>
+                      <option value="46">L 力帆</option>
+                      <option value="47">L 林肯</option>
+                      <option value="48">L 路虎</option>
+                      <option value="49">L 铃木</option>
+                      <option value="50">L 陆风</option>
+                      <option value="51">L 雷克萨斯</option>
+                      <option value="52">L 雷诺</option>
+                      <option value="53">M MG</option>
+                      <option value="54">M MINI</option>
+                      <option value="55">M 马自达</option>
+                      <option value="56">N 纳智捷</option>
+                      <option value="57">O 讴歌</option>
+                      <option value="58">Q 启辰</option>
+                      <option value="59">Q 奇瑞</option>
+                      <option value="60">Q 起亚</option>
+                      <option value="61">R 日产</option>
+                      <option value="62">R 荣威</option>
+                      <option value="63">S SMART</option>
+                      <option value="64">S 三菱</option>
+                      <option value="65">S 上汽大通</option>
+                      <option value="66">S 双龙</option>
+                      <option value="67">S 斯威汽车</option>
+                      <option value="68">S 斯巴鲁</option>
+                      <option value="69">S 斯柯达</option>
+                      <option value="70">T 腾势</option>
+                      <option value="71">W 五菱汽车</option>
+                      <option value="72">W 沃尔沃</option>
+                      <option value="73">X 现代</option>
+                      <option value="74">X 雪佛兰</option>
+                      <option value="75">X 雪铁龙</option>
+                      <option value="76">Y 一汽</option>
+                      <option value="77">Y 英菲尼迪</option>
+                      <option value="78">Z 中华</option>
+                      <option value="79">Z 众泰</option>
+                      <option value="80">Z 知豆</option>
+                      <option value="804">H 汉腾</option>
+                      <option value="808">W WEY</option>
+                      <option value="812">B 保时捷</option>
+                      <option value="813">G 广汽吉奥</option>
+                      <option value="814">F 法拉利</option>
+                      <option value="815">H 黄海</option>
+                      <option value="816">L 猎豹汽车</option>
+                      <option value="817">M 迈凯伦</option>
+                      <option value="818">K 开瑞</option>
+                      <option value="819">F 福迪</option>
+                      <option value="820">H 海格</option>
+                      <option value="822">T 特斯拉</option>
+                    </select>
+								  </span>
+                  <span>
+                    <select name="series_id" class="ipt" id="series_id">
+                      <option>请选择车型</option>
+                    </select>
+                  </span>
+                </p>
+                <p class="check-type" style="display: none"><span class="act" data-type="1"><a>全款购车</a><em></em></span></p>
+                <p><input type="text" class="ipt" name="name" id="name" placeholder="您的姓名"></p>
+                <p><input type="text" class="ipt" name="mobile" id="mobile" placeholder="您的电话"></p>
+                <p>
+                  <div class="btn btn-block btn-danger" onclick="submit_apply(1)">立即网上报名</div>
+                </p>
+              </div>
+            </div>
+            <div class="hot-brands">
+              <div class="hot-brands-title">
+                特卖会品牌
+              </div>
+              <div class="hot-brands-box">
+                <ul>
+                  <li>
+                    <p><a href="/brand/1.html" data-id="1" target="_blank"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="奥迪"></a></p><span><a href="/brand/1.html" data-id="1">奥迪</a></span></li>
+                  <li>
+                    <p><a href="/brand/2.html" data-id="2" target="_blank"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="别克"></a></p><span><a href="/brand/2.html" data-id="2">别克</a></span></li>
+                  <li>
+                    <p><a href="/brand/3.html" data-id="3" target="_blank"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="北京汽车"></a></p><span><a href="/brand/3.html" data-id="3">北京汽车</a></span></li>
+                  <li>
+                    <p><a href="/brand/4.html" data-id="4" target="_blank"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="北汽威旺"></a></p><span><a href="/brand/4.html" data-id="4">北汽威旺</a></span></li>
+                  <li>
+                    <p><a href="/brand/5.html" data-id="5" target="_blank"><img src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" alt="北汽幻速"></a></p><span><a href="/brand/5.html" data-id="5">北汽幻速</a></span></li>
+                  <li>
+                    <p><a href="/brand/6.html" data-id="6" target="_blank"><img src="/uploads/images/20170605/b1dc23de5f4e156463ca233c67375af1.jpeg" alt="北汽新能源"></a></p><span><a href="/brand/6.html" data-id="6">北汽新能源</a></span></li>
+                  <li>
+                    <p><a href="/brand/7.html" data-id="7" target="_blank"><img src="/uploads/images/20170605/d4c3f87740f5b68f3bd6faef5c5fab15.jpeg" alt="奔腾"></a></p><span><a href="/brand/7.html" data-id="7">奔腾</a></span></li>
+                  <li>
+                    <p><a href="/brand/8.html" data-id="8" target="_blank"><img src="/uploads/images/20170605/df6df0fd7ba13eac49968d9672351f2e.jpeg" alt="奔驰"></a></p><span><a href="/brand/8.html" data-id="8">奔驰</a></span></li>
+                </ul>
+                <div class="hot-brands-more"><a href="/temaihui">更多特卖会品牌</a></div>
+              </div>
+            </div>
+            <div class="signup-list">
+              <div class="signup-list-box">
+                <ul>
+                  <li><span><font color="#FF3938">王**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5CNG双燃料</font></span></li>
+                  <li><span><font color="#FF3938">乔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">索纳塔九</font></span></li>
+                  <li><span><font color="#FF3938">史**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+                  <li><span><font color="#FF3938">崔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">领动</font></span></li>
+                  <li><span><font color="#FF3938">安**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">名图</font></span></li>
+                  <li><span><font color="#FF3938">张**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+                  <li><span><font color="#FF3938">田**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">奔驰C级</font></span></li>
+                  <li><span><font color="#FF3938">丁**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+                  <li><span><font color="#FF3938">马**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+                  <li><span><font color="#FF3938">安**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">北京现代ix35</font></span></li>
+                </ul>
+              </div>
+              <div class="signup-tel">
+                特卖会官方客服热线
+                <font color="#FF3938"><strong>400-808-1710</strong></font> 市话收费标准
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="main-nav">
+          <li class="active">
+            <a href="/">首页</a>
+          </li>
+          <li>
+            <a href="/temaihui">新车特卖会</a>
+          </li>
+          <li>
+            <a href="/xuanche">选车</a>
+          </li>
+          <li>
+            <a href="/news">特卖会资讯</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="banner-module">
+    <div class="container">
+      <div class="banner">
+        <!-- bannerSlider Start -->
+        <div class="banner-slider" id="banner-flexslider">
+          <ul class="slides">
+            <li>
+              <a href='/topic/1.html' target="_blank">
+								  <img src="/static/images/banner/banner_001.jpg" data-url='/static/images/banner/banner_01.jpg'  alt="第八届2017石家庄车博会"/>
+							  </a>
+            </li>
+            <li>
+              <a href='/topic/1.html' target="_blank">
+								  <img src="/static/images/banner/banner_002.jpg" data-url='/static/images/banner/banner_02.jpg'  alt="周末团默认"/>
+							  </a>
+            </li>
+          </ul>
+        </div>
+        <!-- bannerSlider End -->
+      </div>
+      <dl class="banner-ad">
+        <dd><img src="/static/images/banner-ad_01.jpg"></dd>
+        <dd><img src="/static/images/banner-ad_02.jpg"></dd>
+        <dd><img src="/static/images/banner-ad_03.jpg"></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="service-module">
+    <div class="container">
+      <div class="service-inline">
+        <ul>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe624;</i></div>
+            <div class="service-info">
+              <h2>低价保证</h2>
+              <p>挑报价最低4S店合作</p>
+            </div>
+          </li>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe660;</i></div>
+            <div class="service-info">
+              <h2>车源保证</h2>
+              <p>甄选本地优质正规4S店</p>
+            </div>
+          </li>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe637;</i></div>
+            <div class="service-info">
+              <h2>全国联保</h2>
+              <p>正规4S店均可维修保养</p>
+            </div>
+          </li>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe610;</i></div>
+            <div class="service-info">
+              <h2>优先提车</h2>
+              <p>享有优先提车权</p>
+            </div>
+          </li>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe680;</i></div>
+            <div class="service-info">
+              <h2>售后维权</h2>
+              <p>质量问题，协助解决</p>
+            </div>
+          </li>
+          <li class="policy">
+            <div class="box-icon"><i class="fa">&#xe64c;</i></div>
+            <div class="service-info">
+              <h2>亿元保障金</h2>
+              <p>买贵赔三倍差价</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 热门品牌 -->
+  <div class="brand-module">
+    <div class="container">
+      <div class="module-title">
+        <h3>石家庄车博会热门品牌询价</h3><span>已为您推荐石家庄车博会18个热销汽车品牌</span></div>
+      <div class="module-content">
+        <ul>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/1.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" width="70" height="70" src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/1.html"><b>奥迪</b></a></h4>
+              <p>已有 <span data-brand="奥迪">1149</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/2.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" width="70" height="70" src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/2.html"><b>别克</b></a></h4>
+              <p>已有 <span data-brand="别克">5634</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/3.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" width="70" height="70" src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/3.html"><b>北京汽车</b></a></h4>
+              <p>已有 <span data-brand="北京汽车">1762</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/4.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" width="70" height="70" src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/4.html"><b>北汽威旺</b></a></h4>
+              <p>已有 <span data-brand="北汽威旺">8217</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/5.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" width="70" height="70" src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/5.html"><b>北汽幻速</b></a></h4>
+              <p>已有 <span data-brand="北汽幻速">9195</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/6.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/b1dc23de5f4e156463ca233c67375af1.jpeg" width="70" height="70" src="/uploads/images/20170605/b1dc23de5f4e156463ca233c67375af1.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/6.html"><b>北汽新能源</b></a></h4>
+              <p>已有 <span data-brand="北汽新能源">8832</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/7.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/d4c3f87740f5b68f3bd6faef5c5fab15.jpeg" width="70" height="70" src="/uploads/images/20170605/d4c3f87740f5b68f3bd6faef5c5fab15.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/7.html"><b>奔腾</b></a></h4>
+              <p>已有 <span data-brand="奔腾">5711</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/8.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/df6df0fd7ba13eac49968d9672351f2e.jpeg" width="70" height="70" src="/uploads/images/20170605/df6df0fd7ba13eac49968d9672351f2e.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/8.html"><b>奔驰</b></a></h4>
+              <p>已有 <span data-brand="奔驰">7190</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/9.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/4c9cf666be3c4dec47c41bcb0fd3a7c6.jpeg" width="70" height="70" src="/uploads/images/20170605/4c9cf666be3c4dec47c41bcb0fd3a7c6.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/9.html"><b>宝沃</b></a></h4>
+              <p>已有 <span data-brand="宝沃">2758</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/10.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/39e3ab93ad9b1af4c8257f9c6bcb3f24.jpeg" width="70" height="70" src="/uploads/images/20170605/39e3ab93ad9b1af4c8257f9c6bcb3f24.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/10.html"><b>宝马</b></a></h4>
+              <p>已有 <span data-brand="宝马">2340</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/11.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/fe3e98a135881e7267c84169cd02b549.jpeg" width="70" height="70" src="/uploads/images/20170605/fe3e98a135881e7267c84169cd02b549.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/11.html"><b>宝骏</b></a></h4>
+              <p>已有 <span data-brand="宝骏">3502</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/12.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/08997a269a375a20f075beb44c650199.jpeg" width="70" height="70" src="/uploads/images/20170605/08997a269a375a20f075beb44c650199.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/12.html"><b>宾利</b></a></h4>
+              <p>已有 <span data-brand="宾利">6263</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/13.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/278d56168730b7fe154d37d46435ef76.jpeg" width="70" height="70" src="/uploads/images/20170605/278d56168730b7fe154d37d46435ef76.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/13.html"><b>本田</b></a></h4>
+              <p>已有 <span data-brand="本田">5698</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/14.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/2758e8f9495519212f4b853c78b5bfb7.jpeg" width="70" height="70" src="/uploads/images/20170605/2758e8f9495519212f4b853c78b5bfb7.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/14.html"><b>标致</b></a></h4>
+              <p>已有 <span data-brand="标致">1478</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/15.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/acf857012163b3783c9edcae6deb78ff.jpeg" width="70" height="70" src="/uploads/images/20170605/acf857012163b3783c9edcae6deb78ff.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/15.html"><b>比亚迪</b></a></h4>
+              <p>已有 <span data-brand="比亚迪">8678</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/16.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/3ebba8481dc9bd10688e8ee9bfec2c4a.jpeg" width="70" height="70" src="/uploads/images/20170605/3ebba8481dc9bd10688e8ee9bfec2c4a.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/16.html"><b>昌河</b></a></h4>
+              <p>已有 <span data-brand="昌河">4237</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/17.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/6f24b072749be3a0714d950d1c0ed159.jpeg" width="70" height="70" src="/uploads/images/20170605/6f24b072749be3a0714d950d1c0ed159.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/17.html"><b>长城</b></a></h4>
+              <p>已有 <span data-brand="长城">6404</span> 人询问车展价</p>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/brand/18.html">
+								<img class="lazyload" data-src="/uploads/images/20170605/68e042395906618dc33f2d1dfde92081.jpeg" width="70" height="70" src="/uploads/images/20170605/68e042395906618dc33f2d1dfde92081.jpeg">
+							</a>
+              <h4><a target="_blank" href="/brand/18.html"><b>长安</b></a></h4>
+              <p>已有 <span data-brand="长安">3987</span> 人询问车展价</p>
+            </div>
+          </li>
+        </ul>
+        <div class="module-more-btn"><a href="/brand/" class="btn btn-default">更多品牌</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div class="ad-module">
+    <div class="container">
+      <img src="/static/images/ad/ad-01.jpg">
+    </div>
+  </div>
+  <!-- 车博会排期 -->
+  <div class="schedule-module">
+    <div class="container">
+      <div class="module-title">
+        <h3>2017年石家庄车博会排期</h3><span>石家庄买车关注易行汽车展 - 为您提供近期石家庄车展信息</span></div>
+      <div class="module-content">
+        <ul>
+          <li>
+            <div class="img-box">
+              <a target="_blank" title="2017起亚K5CNG双燃料车特卖会" href="/topic/8.html">
+									<img class="lazyload" data-src="/uploads/images/20170915/ba5892cc0ad539d59f6e574c5e4f5b80.jpg" width="100%" height="150" src="/uploads/images/20170915/ba5892cc0ad539d59f6e574c5e4f5b80.jpg">
+								</a>
+              <div class="info-item">
+                <a href="/topic/8.html" target="_blank">
+                  <h4>2017起亚K5CNG双燃料车特卖会</h4>
+                </a>
+                <p>
+                  2017年09月23日～2017年09月23日 </p>
+                <p class="info-item-address">
+                  车博会地点：河北省石家庄市和平东路718号（和平路天山大街交口东南角） </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" title="2017奔驰特卖会" href="/topic/7.html">
+									<img class="lazyload" data-src="/uploads/images/20170913/30b36aeb5139c6ed10d1ea59658ac7cb.jpg" width="100%" height="150" src="/uploads/images/20170913/30b36aeb5139c6ed10d1ea59658ac7cb.jpg">
+								</a>
+              <div class="info-item">
+                <a href="/topic/7.html" target="_blank">
+                  <h4>2017奔驰特卖会</h4>
+                </a>
+                <p>
+                  2017年09月17日～2017年09月17日 </p>
+                <p class="info-item-address">
+                  车博会地点：河北省石家庄市新华区康庄大街康恒汽车园区A区1号（和平西路与康庄大街交口路北） </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" title="石家庄第二届车博会" href="/topic/6.html">
+									<img class="lazyload" data-src="/uploads/images/20170912/d233f2b5c13f7f8f9f8fe0072c43b47b.jpg" width="100%" height="150" src="/uploads/images/20170912/d233f2b5c13f7f8f9f8fe0072c43b47b.jpg">
+								</a>
+              <div class="info-item">
+                <a href="/topic/6.html" target="_blank">
+                  <h4>石家庄第二届车博会</h4>
+                </a>
+                <p>
+                  2017年10月14日～2017年10月15日 </p>
+                <p class="info-item-address">
+                  车博会地点：东明国际家具博览中心（东二环店） </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" title="2017斯柯达特卖会" href="/topic/5.html">
+									<img class="lazyload" data-src="/uploads/images/20170903/197f13a57fa257aba01f4934526ee5d7.png" width="100%" height="150" src="/uploads/images/20170903/197f13a57fa257aba01f4934526ee5d7.png">
+								</a>
+              <div class="info-item">
+                <a href="/topic/5.html" target="_blank">
+                  <h4>2017斯柯达特卖会</h4>
+                </a>
+                <p>
+                  2017年08月19日～2017年08月19日 </p>
+                <p class="info-item-address">
+                  车博会地点：石家庄裕华区建通街与塔南路交口南行100米路西 </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 特卖会热门车型 -->
+  <div class="hotcar-module">
+    <div class="container">
+      <div class="module-title">
+        <h3>特卖会热门车型</h3><span>大家都在买...</span>
+        <div class="float-more">
+          <div class="hot-type">
+            <span><a href="" class="act">紧凑型车</a></span><span></span>
+            <span>|</span>
+            <span><a href="">MPV</a></span><span></span>
+            <span>|</span>
+            <span><a href="">中型车</a></span><span></span>
+            <span>|</span>
+            <span><a href="">SUV</a></span><span></span>
+            <span>|</span>
+            <span><a href="">中高级车</a></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="module-content">
+        <!-- 紧凑型车 -->
+        <ul class="indexhot">
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/1.html"><img src="/uploads/images/20170604/42703326549e1330ea0b30a8db891217.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot01"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/1.html"> 石家庄奥迪A6L团购-2017-09-02</a></h4>
+                <span>本期已有<i>864</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/2.html"><img src="/uploads/images/20170604/4c52f21ee8a7326d44171cec0715d260.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot02"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/2.html"> 石家庄奥迪Q5团购-2017-09-02</a></h4>
+                <span>本期已有<i>724</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/3.html"><img src="/uploads/images/20170604/341309fd1ae705457e05ead52951cfbf.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot03"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/3.html"> 石家庄奥迪A4L团购-2017-09-02</a></h4>
+                <span>本期已有<i>712</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/4.html"><img src="/uploads/images/20170604/b854a31bb16e428bda46fd78feadd678.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot04"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/4.html"> 石家庄奥迪A3团购-2017-09-02</a></h4>
+                <span>本期已有<i>734</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/5.html"><img src="/uploads/images/20170604/2fff66f8a27acc028452786438a6af31.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/5.html"> 石家庄奥迪Q7团购-2017-09-02</a></h4>
+                <span>本期已有<i>142</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/6.html"><img src="/uploads/images/20170604/695318feed90c7410e2590619ef9193c.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/6.html"> 石家庄奥迪Q3团购-2017-09-02</a></h4>
+                <span>本期已有<i>535</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/7.html"><img src="/uploads/images/20170604/6218e6475c179a37fdb8f1b1e9f12d0e.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/7.html"> 石家庄奥迪A8L团购-2017-09-02</a></h4>
+                <span>本期已有<i>322</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/8.html"><img src="/uploads/images/20170604/048bb140c6080e13b8b3a829ab8db921.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/8.html"> 石家庄奥迪A1团购-2017-09-02</a></h4>
+                <span>本期已有<i>268</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/1.html"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="" data-url="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+        </ul>
+        <!-- MPV -->
+        <ul class="indexhot hide">
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/9.html"><img src="/uploads/images/20170604/161f18a4528644bc99e06992448f87b1.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot01"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/9.html"> 石家庄别克GL8团购-2017-09-02</a></h4>
+                <span>本期已有<i>324</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/10.html"><img src="/uploads/images/20170604/eb1d6a0984b5ad454ac82621b3896175.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot02"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/10.html"> 石家庄君越团购-2017-09-02</a></h4>
+                <span>本期已有<i>332</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/11.html"><img src="/uploads/images/20170604/73572935406632daeb8f7794d3930154.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot03"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/11.html"> 石家庄昂科威ENVISION团购-2017-09-02</a></h4>
+                <span>本期已有<i>470</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/12.html"><img src="/uploads/images/20170604/942cc842045310f07126b7b76d0da89a.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot04"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/12.html"> 石家庄英朗团购-2017-09-02</a></h4>
+                <span>本期已有<i>205</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/13.html"><img src="/uploads/images/20170604/cf76fcc6c776729d41a0155003716fb2.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/13.html"> 石家庄君威团购-2017-09-02</a></h4>
+                <span>本期已有<i>680</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/14.html"><img src="/uploads/images/20170604/87da9c952c050eed727b7fa797e7edd1.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/14.html"> 石家庄凯越团购-2017-09-02</a></h4>
+                <span>本期已有<i>144</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/15.html"><img src="/uploads/images/20170604/05f7f88425752c73c0d4b2561f4c14db.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/15.html"> 石家庄昂科拉团购-2017-09-02</a></h4>
+                <span>本期已有<i>389</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/16.html"><img src="/uploads/images/20170604/35dc15c526cc09fdcdefa289f749ae0b.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/16.html"> 石家庄昂科雷团购-2017-09-02</a></h4>
+                <span>本期已有<i>864</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+        </ul>
+        <!-- 中型车 -->
+        <ul class="indexhot hide">
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/17.html"><img src="/uploads/images/20170604/79aec8817b0a8e76fc16c4dd16b494af.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot01"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/17.html"> 石家庄威朗团购-2017-09-02</a></h4>
+                <span>本期已有<i>446</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/2.html"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="" data-url="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/18.html"><img src="/uploads/images/20170604/8ebacf6d51e9aee8de9daa8693b6332c.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot02"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/18.html"> 石家庄北京80团购-2017-09-02</a></h4>
+                <span>本期已有<i>565</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/19.html"><img src="/uploads/images/20170604/ceb0f2c1e0a1e596a1e14642d6d2ef78.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot03"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/19.html"> 石家庄绅宝X35团购-2017-09-02</a></h4>
+                <span>本期已有<i>857</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/20.html"><img src="/uploads/images/20170604/3ce1e9ec8619e95def9e0283af37ff74.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot04"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/20.html"> 石家庄绅宝D50团购-2017-09-02</a></h4>
+                <span>本期已有<i>795</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/21.html"><img src="/uploads/images/20170604/05c41c719b5f23c4cd359157caadb8ee.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/21.html"> 石家庄绅宝X55团购-2017-09-02</a></h4>
+                <span>本期已有<i>978</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/22.html"><img src="/uploads/images/20170604/97c2336782b8846024c2e795886f8e3c.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/22.html"> 石家庄北京BJ20团购-2017-09-02</a></h4>
+                <span>本期已有<i>961</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/23.html"><img src="/uploads/images/20170604/4d6827ca8d7012cc3c2a0e13158ee8e4.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/23.html"> 石家庄北京BJ40L团购-2017-09-02</a></h4>
+                <span>本期已有<i>581</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/1082.html"><img src="/uploads/images/20170913/43405e098ac72eb8644a31198e6cf95d.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/1082.html"> 石家庄骏派A70团购-2017-09-02</a></h4>
+                <span>本期已有<i>860</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/76.html"><img src="/uploads/images/20170605/e126a690d7186cd7ff3c8c62979294fd.jpeg" alt="" data-url="/uploads/images/20170605/e126a690d7186cd7ff3c8c62979294fd.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+        </ul>
+        <!-- SUV -->
+        <ul class="indexhot hide">
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/24.html"><img src="/uploads/images/20170604/477837122482ba6a18c2c32d08f7f089.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot01"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/24.html"> 石家庄北京BJ40团购-2017-09-02</a></h4>
+                <span>本期已有<i>787</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/25.html"><img src="/uploads/images/20170604/2e5dea74309192474de17a2787db21ee.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot02"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/25.html"> 石家庄绅宝D70团购-2017-09-02</a></h4>
+                <span>本期已有<i>352</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/26.html"><img src="/uploads/images/20170604/5592b80eedb98835d4356eb3ccb9cac8.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot03"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/26.html"> 石家庄绅宝X65团购-2017-09-02</a></h4>
+                <span>本期已有<i>624</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/27.html"><img src="/uploads/images/20170604/3417749923cf1e8eea27943e0a116235.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot04"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/27.html"> 石家庄绅宝CC团购-2017-09-02</a></h4>
+                <span>本期已有<i>666</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/28.html"><img src="/uploads/images/20170604/020f62c2c83db450e929452d337c7b15.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/28.html"> 石家庄绅宝X25团购-2017-09-02</a></h4>
+                <span>本期已有<i>626</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/29.html"><img src="/uploads/images/20170604/4c67b92a2970e05f245d05d7ef8589d5.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/29.html"> 石家庄绅宝D20团购-2017-09-02</a></h4>
+                <span>本期已有<i>434</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/30.html"><img src="/uploads/images/20170604/af00c8058d62ea085d6c9af338bed3c5.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/30.html"> 石家庄绅宝D80团购-2017-09-02</a></h4>
+                <span>本期已有<i>678</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/3.html"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="" data-url="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/31.html"><img src="/uploads/images/20170604/2b4f9cbb44a204272c620dea82ab7f62.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/31.html"> 石家庄威旺306团购-2017-09-02</a></h4>
+                <span>本期已有<i>654</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+        </ul>
+        <!-- 中高级车 -->
+        <ul class="indexhot hide">
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/32.html"><img src="/uploads/images/20170604/0596fccfef073ce9e030920281063348.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot01"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/32.html"> 石家庄北汽威望M50F团购-2017-09-02</a></h4>
+                <span>本期已有<i>155</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/33.html"><img src="/uploads/images/20170604/7a6708a71c6ae39ecabed8e27720c36d.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot02"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/33.html"> 石家庄北汽威旺M20团购-2017-09-02</a></h4>
+                <span>本期已有<i>286</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/34.html"><img src="/uploads/images/20170604/213a7ecaa7f807ac09abdf552cd198ea.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot03"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/34.html"> 石家庄北汽威望307团购-2017-09-02</a></h4>
+                <span>本期已有<i>893</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/35.html"><img src="/uploads/images/20170604/74d1e9acdc7704de8fd93ac0a9b71763.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em class="ico-hot04"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/35.html"> 石家庄北汽威望M35团购-2017-09-02</a></h4>
+                <span>本期已有<i>899</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/36.html"><img src="/uploads/images/20170604/437f8aa3882b13e76a2033380212ccbf.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/36.html"> 石家庄北汽威旺M30团购-2017-09-02</a></h4>
+                <span>本期已有<i>365</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/37.html"><img src="/uploads/images/20170604/2a3386bdd97e5149d750fb56cf51233b.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/37.html"> 石家庄北汽威旺S50团购-2017-09-02</a></h4>
+                <span>本期已有<i>387</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/4.html"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="" data-url="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/38.html"><img src="/uploads/images/20170604/1ec88443bbf5189768cc1f12d2d39e50.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/38.html"> 石家庄北汽幻速S5团购-2017-09-02</a></h4>
+                <span>本期已有<i>673</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/5.html"><img src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" alt="" data-url="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+          <li>
+            <div class="img-box">
+              <a target="_blank" href="/cars/39.html"><img src="/uploads/images/20170604/4e05b63192f3e9f4e1d46849085ab6de.jpeg" alt="" width="300" height="200" class="lazyload" /></a>
+              <em style="display: none;"></em>
+            </div>
+            <dl>
+              <dd>
+                <h4><a target="_blank" href="/cars/39.html"> 石家庄北汽幻速H2团购-2017-09-02</a></h4>
+                <span>本期已有<i>600</i>人报名</span>
+              </dd>
+              <dt><a href="/brand/5.html"><img src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" alt="" data-url="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" class="scrollLoading" /></a></dt>
+            </dl>
+          </li>
+        </ul>
+        <div class="module-more-btn"><a href="/cars/" class="btn btn-default">更多热门车型</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div class="ad-module">
+    <div class="container">
+      <img src="/static/images/ad/ad-02.jpg">
+    </div>
+  </div>
+  <!-- 特卖会资讯 -->
+  <div class="news-module">
+    <div class="container">
+      <div class="module-title">
+        <h3>特卖会资讯</h3><span>最新车市资讯抢先看...</span>
+      </div>
+      <div class="module-content">
+        <div class="news-box">
+          <div class="news-header">
+            <h4>车博会</h4>
+          </div>
+          <div class="news-img">
+            <a href="/news/1.html" target="_blank">
+							<img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg">
+							<p>一文看尽所有新车！ 2017石家庄车博会上市新车汇总</p>
+							</a>
+          </div>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+
+        </div>
+        <div class="news-box">
+          <div class="news-header">
+            <h4>车博会资讯</h4>
+          </div>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会节来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" alt="2017石家庄车博会团车节来头大 车价优惠到底" data-url="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg"></a></dt>
+            <dd>
+              <h5><a href="/news/1.html" target="_blank">2017石家庄车博会来头大 车价优惠到底</a></h5>
+              <p>2017石家庄车博会即将精彩绽放，本届车展展......</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="news-box">
+          <a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" height="223"></a>
+          <a href="/news/1.html" target="_blank"><img src="http://www.yixingauto.com//static/groupon/default/images/news/news_03.jpg" height="223" style="margin-top:10px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div class="ad-module">
+    <div class="container">
+      <img src="/static/images/ad/ad-03.jpg">
+    </div>
+  </div>
+  <!-- 特卖会现场 -->
+  <div class="scene-module">
+    <div class="container">
+      <div class="module-title">
+        <h3>特卖会现场</h3><span>真实的现场报道...</span>
+      </div>
+      <div class="module-content">
+        <ul class="first">
+          <li class="large">
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                            <img src="http://www.yixingauto.com//static/images/news/news_01.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                            <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_02.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_03.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_04.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_05.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+        </ul>
+        <ul class="second">
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                            <img src="http://www.yixingauto.com//static/images/news/news_06.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                            <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_07.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+          <li>
+            <a href="/topic/1.html" title="2017年河北石家庄体育馆车博会">
+                        <img src="http://www.yixingauto.com//static/images/news/news_08.jpg" class="thumb" alt="2017年河北石家庄体育馆车博会">
+                        <h4>2017年河北石家庄体育馆车博会即将开幕</h4></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-service">
+    <div class="container">
+      <ul>
+        <li>
+          <i class="fa">&#xe624;</i>
+          <h3>低价保证</h3>
+          <p>挑报价最低4S店合作</p>
+        </li>
+        <li>
+          <i class="fa">&#xe660;</i>
+          <h3>车源保证</h3>
+          <p>甄选本地优质正规4S店</p>
+        </li>
+        <li>
+          <i class="fa">&#xe637;</i>
+          <h3>全国联保</h3>
+          <p>正规4S店均可维修保养</p>
+        </li>
+        <li>
+          <i class="fa">&#xe610;</i>
+          <h3>优先提车</h3>
+          <p>享有优先提车权</p>
+        </li>
+        <li>
+          <i class="fa">&#xe680;</i>
+          <h3>售后维权</h3>
+          <p>质量问题，协助解决</p>
+        </li>
+        <li>
+          <i class="fa">&#xe64c;</i>
+          <h3>亿元保障金</h3>
+          <p>买贵赔三倍差价</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="links">
+    <div class="container">
+      <div class="links-title">
+        <h3>热门品牌汽车团购</h3>
+        <span><a href="" target="_blank">更多</a></span>
+      </div>
+      <div class="links-box">
+        <span><a href="" target="_blank">一汽-大众</a></span>
+        <span><a href="" target="_blank">上汽大众</a></span>
+        <span><a href="" target="_blank">北京现代</a></span>
+        <span><a href="" target="_blank">长安福特</a></span>
+        <span><a href="" target="_blank">东风雪铁龙</a></span>
+        <span><a href="" target="_blank">东风标致</a></span>
+        <span><a href="" target="_blank">通用别克</a></span>
+        <span><a href="" target="_blank">通用雪佛兰</a></span>
+        <span><a href="" target="_blank">广汽本田</a></span>
+        <span><a href="" target="_blank">东风本田</a></span>
+        <span><a href="" target="_blank">广汽丰田</a></span>
+        <span><a href="" target="_blank">一汽丰田</a></span>
+        <span><a href="" target="_blank">上汽荣威</a></span>
+        <span><a href="" target="_blank">上汽名爵</a></span>
+        <span><a href="" target="_blank">东风雪铁龙</a></span>
+        <span><a href="" target="_blank">东风标致</a></span>
+        <span><a href="" target="_blank">通用别克</a></span>
+        <span><a href="" target="_blank">通用雪佛兰</a></span>
+        <span><a href="" target="_blank">广汽本田</a></span>
+        <span><a href="" target="_blank">东风本田</a></span>
+        <span><a href="" target="_blank">广汽丰田</a></span>
+        <span><a href="" target="_blank">一汽丰田</a></span>
+        <span><a href="" target="_blank">上汽荣威</a></span>
+        <span><a href="" target="_blank">上汽名爵</a></span>
+      </div>
+    </div>
+  </div>
+  <div class="links">
+    <div class="container">
+      <div class="links-title">
+        <h3>合作伙伴 / 友情链接</h3>
+      </div>
+      <div class="links-box">
+        <span><a href="" target="_blank">一汽-大众</a></span>
+        <span><a href="" target="_blank">上汽大众</a></span>
+        <span><a href="" target="_blank">北京现代</a></span>
+        <span><a href="" target="_blank">长安福特</a></span>
+        <span><a href="" target="_blank">东风雪铁龙</a></span>
+        <span><a href="" target="_blank">东风标致</a></span>
+        <span><a href="" target="_blank">通用别克</a></span>
+        <span><a href="" target="_blank">通用雪佛兰</a></span>
+        <span><a href="" target="_blank">广汽本田</a></span>
+        <span><a href="" target="_blank">东风本田</a></span>
+        <span><a href="" target="_blank">广汽丰田</a></span>
+        <span><a href="" target="_blank">一汽丰田</a></span>
+        <span><a href="" target="_blank">上汽荣威</a></span>
+        <span><a href="" target="_blank">上汽名爵</a></span>
+        <span><a href="" target="_blank">东风雪铁龙</a></span>
+        <span><a href="" target="_blank">东风标致</a></span>
+        <span><a href="" target="_blank">通用别克</a></span>
+        <span><a href="" target="_blank">通用雪佛兰</a></span>
+        <span><a href="" target="_blank">广汽本田</a></span>
+        <span><a href="" target="_blank">东风本田</a></span>
+        <span><a href="" target="_blank">广汽丰田</a></span>
+        <span><a href="" target="_blank">一汽丰田</a></span>
+        <span><a href="" target="_blank">上汽荣威</a></span>
+        <span><a href="" target="_blank">上汽名爵</a></span>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="site-info">
+        <dl>
+          <dt><a href="">易行汽车</a></dt>
+          <dd>
+            <p><a href="">品牌大全</a></p>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="">关于易行</a></dt>
+          <dd>
+            <p><a href="">关于我们</a></p>
+            <p><a href="">联系我们</a></p>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="">加入易行</a></dt>
+          <dd>
+            <p><a href="">加入我们</a></p>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="">商务合作</a></dt>
+          <dd>
+            <p><a href="">申请合作</a></p>
+          </dd>
+        </dl>
+        <dl>
+          <dt><a href="">其他</a></dt>
+          <dd>
+            <p><a href="">维权声明</a></p>
+            <p><a href="">我要投诉</a></p>
+          </dd>
+        </dl>
+      </div>
+      <div class="site-contact">
+        <div class="site-weixin"><img src="/static/groupon/pc/images/qrcode.png"></div>
+        <div class="site-tel">
+          <p class="phone">400-808-1710</p>
+          <p><span>周一至周五 9:00-18:00</span></p>
+          <a rel="nofollow" class="btn btn-danger" href="http://wpa.qq.com/msgrd?v=3&uin=2460436177&site=qq&menu=yes" target="_blank"> 在线咨询</a>
+        </div>
+      </div>
+      <div class="site-copyright">
+        <p>Copyright © 2017 河北易之行网络科技有限公司 | 备案/许可证号： 冀ICP备17016416号-1<br>地址：河北省石家庄市裕华区槐安路152号 电话：0311-66561958</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <div class="rollbar">
+    <ul>
+      <li>
+        <a href="">
+                <i class="fa">&#xe642;</i>
+            </a>
+        <h6 class="qrcode"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"><i></i></h6>
+      </li>
+      <li>
+        <a href="">
+                <i class="fa">&#xe606;</i>
+            </a>
+        <h6>客服<i></i></h6>
+      </li>
+      <li class="go-top">
+        <a href="javascript:(scrollTo());">
+                <i class="fa">&#xe76e;</i>
+            </a>
+        <h6>去顶部<i></i></h6>
+      </li>
+    </ul>
+  </div>
+  <script src="/static/libs/layer/layer.js"></script>
+  <script type="text/javascript" src="/static/js/topic.js"></script>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?424c54733e94013660c18c69dcf1a88f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script type="text/javascript" src="/static/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="/static/js/common.js"></script>
+  <script type="text/javascript" src="/static/js/index.js"></script>
+  <script>
+    var topic_id = 0;
+  </script>
+</body>
+
+</html>
