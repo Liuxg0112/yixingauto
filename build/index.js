@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const source = `${__dirname}/../static/index.html`
+const source = `${__dirname}/../public/news.html`
 const result = `${__dirname}/files.txt`
 // 删除已存在文件
 if (fs.existsSync(result)) {

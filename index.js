@@ -1,17 +1,16 @@
 const Koa = require('koa')
 const logger = require('koa-logger')
 const serve = require('koa-static')
-// const router = require('./routes/index')
+const bodyParser = require('koa-bodyparser');
+const router = require('./routes')
 
 const app = new Koa()
 
 app.use(logger())
-app.use(serve(`${__dirname}/uploads`))
-app.use(serve(`${__dirname}/public`))
-
-// app
-  // .use(router.routes())
-  // .use(router.allowedMethods())
+  .use(serve(`${__dirname}/public`,{extensions:['html']}))
+  .use(bodyParser())
+  .use(router.routes())
+  .use(router.allowedMethods())
 
 // response
 // app.use(ctx => {
