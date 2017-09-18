@@ -6,7 +6,8 @@
   "author": "liuxg <liu.xingguo@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
