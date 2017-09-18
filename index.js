@@ -21,4 +21,4 @@ app.on('error', function (err, ctx) {
   console.error('server error', err, ctx)
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
