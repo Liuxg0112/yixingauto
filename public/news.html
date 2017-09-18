@@ -1,0 +1,705 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="易行汽车">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/icon-144x144.png">
+	<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+	<title>特卖会资讯</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/static/css/base.css" media="all">
+	<link rel="stylesheet" href="/static/css/app.css" media="all">
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+			<script src="https://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<header class="header">
+		<div class="topbar">
+			<div class="container">
+				<ul class="site-nav topmenu">
+					<li>
+						<a class="site-touch" href="javascript:;"><i class="fa">&#xe705;</i> 手机版<div class="topbar-popover"><div class="topbar-popover-content"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"></div></div></a>
+					</li>
+					<li>
+						<a class="site-weixin" href="javascript:;"><i class="fa">&#xe602;</i> 关注微信<div class="topbar-popover"><div class="topbar-popover-content"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"></div></div></a>
+					</li>
+				</ul>
+				易行汽车，易行天下 - 中国领先的汽车电商平台
+			</div>
+		</div>
+		<div class="container">
+			<div class="logo">
+				<a href="http://www.yixingauto.com" title="易行汽车"><img src="/static/groupon/pc/images/logo.png">易行汽车</a>
+			</div>
+			<div class="change-city"><i class="fa">&#xe648;</i> <span class="current-city">石家庄<div class="change-city-popover"><div class="change-city-popover-content"><a title="石家庄汽车团购" href="" target="_blank">石家庄</a> <a title="天津汽车团购" href="" target="_blank">天津</a></div></div></span></div>
+			<div class="promise"></div>
+			<div class="search">
+				<div class="search-box">
+					<input type="text" id="searchtext" name="search" placeholder="请输入关键词">
+					<a class="btn-search"><i class="fa">&#xe61d;</i></a>
+				</div>
+				<div class="hot-car">
+					<dt>热门车型：</dt>
+					<dd><a href="/brand/1.html">奥迪</a></dd>
+					<dd><a href="/brand/2.html">别克</a></dd>
+					<dd><a href="/brand/3.html">北京汽车</a></dd>
+					<dd><a href="/brand/4.html">北汽威旺</a></dd>
+					<dd><a href="/brand/5.html">北汽幻速</a></dd>
+					<dd><a href="/brand/6.html">北汽新能源</a></dd>
+					<dd><a href="/brand/7.html">奔腾</a></dd>
+					<dd><a href="/brand/8.html">奔驰</a></dd>
+				</div>
+			</div>
+		</div>
+		<div class="site-navbar">
+			<div class="container">
+				<div class="header-panel">
+					<div class="header-panel-title">
+						<i class="fa">&#xe618;</i> 按品牌车型选择
+					</div>
+					<div class="header-panel-box" style="display: none;">
+						<div class="header-reg">
+							<div class="header-reg-title">
+								<p style="text-align: center;font-weight: 700;">看车 比价 买车 特卖会轻松搞定</p>
+								<p style="text-align: center;font-size: 12px;">立即报名预约河北石家庄体育馆车博会</p>
+								<p style="font-size:12px;">您的意向车型：</p>
+							</div>
+							<div class="header-reg-form" id="form_1">
+								<p class="brand-select">
+									<span>
+									<select name="brand_id" class="ipt" id="brand_id" onchange="load_series(this.value,1)">
+										<option>请选择品牌</option>
+																				<option value="1">A 奥迪</option>
+																				<option value="2">B 别克</option>
+																				<option value="3">B 北京汽车</option>
+																				<option value="4">B 北汽威旺</option>
+																				<option value="5">B 北汽幻速</option>
+																				<option value="6">B 北汽新能源</option>
+																				<option value="7">B 奔腾</option>
+																				<option value="8">B 奔驰</option>
+																				<option value="9">B 宝沃</option>
+																				<option value="10">B 宝马</option>
+																				<option value="11">B 宝骏</option>
+																				<option value="12">B 宾利</option>
+																				<option value="13">B 本田</option>
+																				<option value="14">B 标致</option>
+																				<option value="15">B 比亚迪</option>
+																				<option value="16">C 昌河</option>
+																				<option value="17">C 长城</option>
+																				<option value="18">C 长安</option>
+																				<option value="19">C 长安商用</option>
+																				<option value="20">D DS</option>
+																				<option value="21">D 东南</option>
+																				<option value="22">D 东风小康</option>
+																				<option value="23">D 东风风度</option>
+																				<option value="24">D 东风风神</option>
+																				<option value="25">D 东风风行</option>
+																				<option value="26">D 大众</option>
+																				<option value="27">D 道奇</option>
+																				<option value="28">F 丰田</option>
+																				<option value="29">F 福特</option>
+																				<option value="30">F 福田</option>
+																				<option value="31">F 菲亚特</option>
+																				<option value="32">G 广汽传祺</option>
+																				<option value="33">G 观致</option>
+																				<option value="34">H 华泰</option>
+																				<option value="35">H 华颂</option>
+																				<option value="36">H 海马</option>
+																				<option value="37">H 红旗</option>
+																				<option value="38">J JEEP</option>
+																				<option value="39">J 吉利汽车</option>
+																				<option value="40">J 捷豹</option>
+																				<option value="41">J 江淮</option>
+																				<option value="42">J 江铃</option>
+																				<option value="43">J 金杯</option>
+																				<option value="44">K 克莱斯勒</option>
+																				<option value="45">K 凯迪拉克</option>
+																				<option value="46">L 力帆</option>
+																				<option value="47">L 林肯</option>
+																				<option value="48">L 路虎</option>
+																				<option value="49">L 铃木</option>
+																				<option value="50">L 陆风</option>
+																				<option value="51">L 雷克萨斯</option>
+																				<option value="52">L 雷诺</option>
+																				<option value="53">M MG</option>
+																				<option value="54">M MINI</option>
+																				<option value="55">M 马自达</option>
+																				<option value="56">N 纳智捷</option>
+																				<option value="57">O 讴歌</option>
+																				<option value="58">Q 启辰</option>
+																				<option value="59">Q 奇瑞</option>
+																				<option value="60">Q 起亚</option>
+																				<option value="61">R 日产</option>
+																				<option value="62">R 荣威</option>
+																				<option value="63">S SMART</option>
+																				<option value="64">S 三菱</option>
+																				<option value="65">S 上汽大通</option>
+																				<option value="66">S 双龙</option>
+																				<option value="67">S 斯威汽车</option>
+																				<option value="68">S 斯巴鲁</option>
+																				<option value="69">S 斯柯达</option>
+																				<option value="70">T 腾势</option>
+																				<option value="71">W 五菱汽车</option>
+																				<option value="72">W 沃尔沃</option>
+																				<option value="73">X 现代</option>
+																				<option value="74">X 雪佛兰</option>
+																				<option value="75">X 雪铁龙</option>
+																				<option value="76">Y 一汽</option>
+																				<option value="77">Y 英菲尼迪</option>
+																				<option value="78">Z 中华</option>
+																				<option value="79">Z 众泰</option>
+																				<option value="80">Z 知豆</option>
+																				<option value="804">H 汉腾</option>
+																				<option value="808">W WEY</option>
+																				<option value="812">B 保时捷</option>
+																				<option value="813">G 广汽吉奥</option>
+																				<option value="814">F 法拉利</option>
+																				<option value="815">H 黄海</option>
+																				<option value="816">L 猎豹汽车</option>
+																				<option value="817">M 迈凯伦</option>
+																				<option value="818">K 开瑞</option>
+																				<option value="819">F 福迪</option>
+																				<option value="820">H 海格</option>
+																				<option value="822">T 特斯拉</option>
+																			</select>
+								</span>
+									<span>
+									<select name="series_id" class="ipt" id="series_id">
+										<option>请选择车型</option>
+									</select>
+								</span>
+								</p>
+								<p class="check-type"><span class="act" data-type="1" style="display: none"><a>全款购车</a><em></em></span></p>
+								<p><input type="text" class="ipt" name="name" id="name" placeholder="您的姓名"></p>
+								<p><input type="text" class="ipt" name="mobile" id="mobile" placeholder="您的电话"></p>
+								<p>
+									<div class="btn btn-block btn-danger" onclick="submit_apply(1)">立即网上报名</div>
+								</p>
+							</div>
+						</div>
+						<div class="hot-brands">
+							<div class="hot-brands-title">
+								特卖会品牌
+							</div>
+							<div class="hot-brands-box">
+								<ul>
+									<li>
+										<p><a href="/brand/1.html" data-id="1" target="_blank"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="奥迪"></a></p><span><a href="/brand/1.html" data-id="1">奥迪</a></span></li>
+									<li>
+										<p><a href="/brand/2.html" data-id="2" target="_blank"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="别克"></a></p><span><a href="/brand/2.html" data-id="2">别克</a></span></li>
+									<li>
+										<p><a href="/brand/3.html" data-id="3" target="_blank"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="北京汽车"></a></p><span><a href="/brand/3.html" data-id="3">北京汽车</a></span></li>
+									<li>
+										<p><a href="/brand/4.html" data-id="4" target="_blank"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="北汽威旺"></a></p><span><a href="/brand/4.html" data-id="4">北汽威旺</a></span></li>
+									<li>
+										<p><a href="/brand/5.html" data-id="5" target="_blank"><img src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" alt="北汽幻速"></a></p><span><a href="/brand/5.html" data-id="5">北汽幻速</a></span></li>
+									<li>
+										<p><a href="/brand/6.html" data-id="6" target="_blank"><img src="/uploads/images/20170605/b1dc23de5f4e156463ca233c67375af1.jpeg" alt="北汽新能源"></a></p><span><a href="/brand/6.html" data-id="6">北汽新能源</a></span></li>
+									<li>
+										<p><a href="/brand/7.html" data-id="7" target="_blank"><img src="/uploads/images/20170605/d4c3f87740f5b68f3bd6faef5c5fab15.jpeg" alt="奔腾"></a></p><span><a href="/brand/7.html" data-id="7">奔腾</a></span></li>
+									<li>
+										<p><a href="/brand/8.html" data-id="8" target="_blank"><img src="/uploads/images/20170605/df6df0fd7ba13eac49968d9672351f2e.jpeg" alt="奔驰"></a></p><span><a href="/brand/8.html" data-id="8">奔驰</a></span></li>
+								</ul>
+								<div class="hot-brands-more"><a href="/temaihui">更多特卖会品牌</a></div>
+							</div>
+						</div>
+						<div class="signup-list">
+							<div class="signup-list-box">
+								<ul>
+									<li><span><font color="#FF3938">严**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">李**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">全新胜达(进口)</font></span></li>
+									<li><span><font color="#FF3938">夕**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">索纳塔九</font></span></li>
+									<li><span><font color="#FF3938">王**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5CNG双燃料</font></span></li>
+									<li><span><font color="#FF3938">乔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">索纳塔九</font></span></li>
+									<li><span><font color="#FF3938">史**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">崔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">领动</font></span></li>
+									<li><span><font color="#FF3938">安**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">名图</font></span></li>
+									<li><span><font color="#FF3938">张**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">田**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">奔驰C级</font></span></li>
+								</ul>
+							</div>
+							<div class="signup-tel">
+								特卖会官方客服热线
+								<font color="#FF3938"><strong>400-808-1710</strong></font> 市话收费标准
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="main-nav">
+					<li>
+						<a href="/">首页</a>
+					</li>
+					<li>
+						<a href="/temaihui">新车特卖会</a>
+					</li>
+					<li>
+						<a href="/xuanche">选车</a>
+					</li>
+					<li>
+						<a href="/news">特卖会资讯</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- flexslider引入 -->
+	<script type="text/javascript" src="/static/js/jquery.flexslider-min.js"></script>
+	<link rel="stylesheet" href="/static/css/flexslider.css" media="all">
+	<section class="container news-index">
+		<div class="content-wrap">
+			<div class="content">
+				<div class="news-banner">
+					<!-- bannerSlider Start -->
+					<div class="banner-slider" id="banner-flexslider">
+						<ul class="slides">
+							<li>
+								<a href='/tcj/238' target="_blank">
+					                      <img src="/static/images/banner/banner_01.jpg" data-url='/static/images/banner/banner_01.jpg'  alt="第八届河南惠民团车节"/>
+					                  </a>
+							</li>
+							<li>
+								<a href='/brand/' target="_blank">
+					                      <img src="/static/images/banner/banner_02.jpg" data-url='/static/images/banner/banner_02.jpg'  alt="周末团默认"/>
+					                  </a>
+							</li>
+						</ul>
+					</div>
+					<!-- bannerSlider End -->
+				</div>
+				<div class="category-list">
+					<div class="category-item">
+						<div class="category-item-header">
+							<h2><span><a href="" target="_blank">车博会资讯</a></span></h2>
+						</div>
+						<div class="category-item-content">
+							<ul>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="category-item-header">
+							<h2><span><a href="" target="_blank">车博会资讯</a></span></h2>
+						</div>
+						<div class="category-item-content">
+							<ul>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="category-item-header">
+							<h2><span><a href="" target="_blank">车博会资讯</a></span></h2>
+						</div>
+						<div class="category-item-content">
+							<ul>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="category-item-header">
+							<h2><span><a href="" target="_blank">车博会资讯</a></span></h2>
+						</div>
+						<div class="category-item-content">
+							<ul>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+								<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家森林公园</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<div class="last-news-widget">
+				<h4>最近更新</h4>
+				<div class="widget-box">
+					<ul>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+						<li><a href="/news/1.html" target="_blank">汽车装具网联盟车队第三站--张家界天门山国家</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="image-widget">
+				<div class="item">
+					<a href=""><img src="http://www.yixingauto.com/uploads/images/20170903/197f13a57fa257aba01f4934526ee5d7.png"></a>
+				</div>
+				<div class="item">
+					<a href=""><img src="http://www.yixingauto.com/uploads/images/20170903/197f13a57fa257aba01f4934526ee5d7.png"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container hot-groupbuy">
+		<div class="content-wrap">
+			<div class="title-wrap">
+				<span></span>
+				<h3><a href="" target="_blank">热门团购</a></h3>
+			</div>
+			<ul>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+				<li>
+					<div class="img-box">
+						<a href="" target="_blank">
+								<img alt="石家庄迈腾团购" title="石家庄迈腾团购" src="http://pic.tuanche.com/car/20160728/14696866491042828_s.jpg"></a>
+					</div>
+					<div class="hot-title">
+						<a href="" target="_blank" title="石家庄迈腾团购">石家庄迈腾团购</a> -
+						<a href="" target="_blank" rel="nofollow">2017-10-01</a>
+					</div>
+					<div class="hot-info">
+						<span>本期报名:<em>29</em>人</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="bottom-service">
+		<div class="container">
+			<ul>
+				<li>
+					<i class="fa">&#xe624;</i>
+					<h3>低价保证</h3>
+					<p>挑报价最低4S店合作</p>
+				</li>
+				<li>
+					<i class="fa">&#xe660;</i>
+					<h3>车源保证</h3>
+					<p>甄选本地优质正规4S店</p>
+				</li>
+				<li>
+					<i class="fa">&#xe637;</i>
+					<h3>全国联保</h3>
+					<p>正规4S店均可维修保养</p>
+				</li>
+				<li>
+					<i class="fa">&#xe610;</i>
+					<h3>优先提车</h3>
+					<p>享有优先提车权</p>
+				</li>
+				<li>
+					<i class="fa">&#xe680;</i>
+					<h3>售后维权</h3>
+					<p>质量问题，协助解决</p>
+				</li>
+				<li>
+					<i class="fa">&#xe64c;</i>
+					<h3>亿元保障金</h3>
+					<p>买贵赔三倍差价</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="links">
+		<div class="container">
+			<div class="links-title">
+				<h3>热门品牌汽车团购</h3>
+				<span><a href="" target="_blank">更多</a></span>
+			</div>
+			<div class="links-box">
+				<span><a href="" target="_blank">一汽-大众</a></span>
+				<span><a href="" target="_blank">上汽大众</a></span>
+				<span><a href="" target="_blank">北京现代</a></span>
+				<span><a href="" target="_blank">长安福特</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="links">
+		<div class="container">
+			<div class="links-title">
+				<h3>合作伙伴 / 友情链接</h3>
+			</div>
+			<div class="links-box">
+				<span><a href="" target="_blank">一汽-大众</a></span>
+				<span><a href="" target="_blank">上汽大众</a></span>
+				<span><a href="" target="_blank">北京现代</a></span>
+				<span><a href="" target="_blank">长安福特</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="site-info">
+				<dl>
+					<dt><a href="">易行汽车</a></dt>
+					<dd>
+						<p><a href="">品牌大全</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">关于易行</a></dt>
+					<dd>
+						<p><a href="">关于我们</a></p>
+						<p><a href="">联系我们</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">加入易行</a></dt>
+					<dd>
+						<p><a href="">加入我们</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">商务合作</a></dt>
+					<dd>
+						<p><a href="">申请合作</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">其他</a></dt>
+					<dd>
+						<p><a href="">维权声明</a></p>
+						<p><a href="">我要投诉</a></p>
+					</dd>
+				</dl>
+			</div>
+			<div class="site-contact">
+				<div class="site-weixin"><img src="/static/groupon/pc/images/qrcode.png"></div>
+				<div class="site-tel">
+					<p class="phone">400-808-1710</p>
+					<p><span>周一至周五 9:00-18:00</span></p>
+					<a rel="nofollow" class="btn btn-danger" href="http://wpa.qq.com/msgrd?v=3&uin=2460436177&site=qq&menu=yes" target="_blank"> 在线咨询</a>
+				</div>
+			</div>
+			<div class="site-copyright">
+				<p>Copyright © 2017 河北易之行网络科技有限公司 | 备案/许可证号： 冀ICP备17016416号-1<br>地址：河北省石家庄市裕华区槐安路152号 电话：0311-66561958</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+	<div class="rollbar">
+		<ul>
+			<li>
+				<a href="">
+                <i class="fa">&#xe642;</i>
+            </a>
+				<h6 class="qrcode"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"><i></i></h6>
+			</li>
+			<li>
+				<a href="">
+                <i class="fa">&#xe606;</i>
+            </a>
+				<h6>客服<i></i></h6>
+			</li>
+			<li class="go-top">
+				<a href="javascript:(scrollTo());">
+                <i class="fa">&#xe76e;</i>
+            </a>
+				<h6>去顶部<i></i></h6>
+			</li>
+		</ul>
+	</div>
+	<script src="/static/libs/layer/layer.js"></script>
+	<script type="text/javascript" src="/static/js/topic.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?424c54733e94013660c18c69dcf1a88f";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//幻灯
+			$("#banner-flexslider").hover(function () {
+				$(".flex-direction-nav li .flex-prev").animate({
+						left: 0
+					}, 200),
+					$(".flex-direction-nav li .flex-next").animate({
+						right: 0
+					}, 200)
+			}, function () {
+				$(".flex-direction-nav li .flex-prev").animate({
+						left: "-100px"
+					}, 200),
+					$(".flex-direction-nav li .flex-next").animate({
+						right: "-100px"
+					}, 200)
+			});
+			$("#banner-flexslider").flexslider({
+				animation: "slide",
+				controlNav: !0,
+				directionNav: !0
+			});
+			$(".flex-control-nav").css("z-index", 3);
+			$(".flex-direction-nav li .flex-prev").animate({
+				left: "-100px"
+			}, 200);
+			$(".flex-direction-nav li .flex-next").animate({
+				right: "-100px"
+			}, 200);
+			$('.main-nav').find('li:eq(3)').addClass('active');
+		})
+	</script>
+	<script type="text/javascript" src="/static/js/common.js"></script>
+</body>
+
+</html>

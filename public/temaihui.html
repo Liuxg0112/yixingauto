@@ -1,0 +1,1247 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="易行汽车">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/icon-144x144.png">
+	<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+	<title>特卖会 - 易行汽车</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/static/css/base.css" media="all">
+	<link rel="stylesheet" href="/static/css/app.css" media="all">
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+			<script src="https://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+
+<body class="page-temaihui">
+	<header class="header">
+		<div class="topbar">
+			<div class="container">
+				<ul class="site-nav topmenu">
+					<li>
+						<a class="site-touch" href="javascript:;"><i class="fa">&#xe705;</i> 手机版<div class="topbar-popover"><div class="topbar-popover-content"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"></div></div></a>
+					</li>
+					<li>
+						<a class="site-weixin" href="javascript:;"><i class="fa">&#xe602;</i> 关注微信<div class="topbar-popover"><div class="topbar-popover-content"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"></div></div></a>
+
+					</li>
+				</ul>
+				易行汽车，易行天下 - 中国领先的汽车电商平台
+			</div>
+		</div>
+		<div class="container">
+			<div class="logo">
+				<a href="http://www.yixingauto.com" title="易行汽车"><img src="/static/groupon/pc/images/logo.png">易行汽车</a>
+			</div>
+			<div class="change-city"><i class="fa">&#xe648;</i> <span class="current-city">石家庄<div class="change-city-popover"><div class="change-city-popover-content"><a title="石家庄汽车团购" href="" target="_blank">石家庄</a> <a title="天津汽车团购" href="" target="_blank">天津</a></div></div></span></div>
+			<div class="promise"></div>
+			<div class="search">
+				<div class="search-box">
+					<input type="text" id="searchtext" name="search" placeholder="请输入关键词">
+					<a class="btn-search"><i class="fa">&#xe61d;</i></a>
+				</div>
+				<div class="hot-car">
+					<dt>热门车型：</dt>
+					<dd><a href="/brand/1.html">奥迪</a></dd>
+					<dd><a href="/brand/2.html">别克</a></dd>
+					<dd><a href="/brand/3.html">北京汽车</a></dd>
+					<dd><a href="/brand/4.html">北汽威旺</a></dd>
+					<dd><a href="/brand/5.html">北汽幻速</a></dd>
+					<dd><a href="/brand/6.html">北汽新能源</a></dd>
+					<dd><a href="/brand/7.html">奔腾</a></dd>
+					<dd><a href="/brand/8.html">奔驰</a></dd>
+				</div>
+			</div>
+		</div>
+		<div class="site-navbar">
+			<div class="container">
+				<div class="header-panel">
+					<div class="header-panel-title">
+						<i class="fa">&#xe618;</i> 按品牌车型选择
+					</div>
+					<div class="header-panel-box" style="display: none;">
+						<div class="header-reg">
+							<div class="header-reg-title">
+								<p style="text-align: center;font-weight: 700;">看车 比价 买车 特卖会轻松搞定</p>
+								<p style="text-align: center;font-size: 12px;">立即报名预约河北石家庄体育馆车博会</p>
+								<p style="font-size:12px;">您的意向车型：</p>
+							</div>
+							<div class="header-reg-form" id="form_1">
+								<p class="brand-select">
+									<span>
+									<select name="brand_id" class="ipt" id="brand_id" onchange="load_series(this.value,1)">
+										<option>请选择品牌</option>
+																				<option value="1">A 奥迪</option>
+																				<option value="2">B 别克</option>
+																				<option value="3">B 北京汽车</option>
+																				<option value="4">B 北汽威旺</option>
+																				<option value="5">B 北汽幻速</option>
+																				<option value="6">B 北汽新能源</option>
+																				<option value="7">B 奔腾</option>
+																				<option value="8">B 奔驰</option>
+																				<option value="9">B 宝沃</option>
+																				<option value="10">B 宝马</option>
+																				<option value="11">B 宝骏</option>
+																				<option value="12">B 宾利</option>
+																				<option value="13">B 本田</option>
+																				<option value="14">B 标致</option>
+																				<option value="15">B 比亚迪</option>
+																				<option value="16">C 昌河</option>
+																				<option value="17">C 长城</option>
+																				<option value="18">C 长安</option>
+																				<option value="19">C 长安商用</option>
+																				<option value="20">D DS</option>
+																				<option value="21">D 东南</option>
+																				<option value="22">D 东风小康</option>
+																				<option value="23">D 东风风度</option>
+																				<option value="24">D 东风风神</option>
+																				<option value="25">D 东风风行</option>
+																				<option value="26">D 大众</option>
+																				<option value="27">D 道奇</option>
+																				<option value="28">F 丰田</option>
+																				<option value="29">F 福特</option>
+																				<option value="30">F 福田</option>
+																				<option value="31">F 菲亚特</option>
+																				<option value="32">G 广汽传祺</option>
+																				<option value="33">G 观致</option>
+																				<option value="34">H 华泰</option>
+																				<option value="35">H 华颂</option>
+																				<option value="36">H 海马</option>
+																				<option value="37">H 红旗</option>
+																				<option value="38">J JEEP</option>
+																				<option value="39">J 吉利汽车</option>
+																				<option value="40">J 捷豹</option>
+																				<option value="41">J 江淮</option>
+																				<option value="42">J 江铃</option>
+																				<option value="43">J 金杯</option>
+																				<option value="44">K 克莱斯勒</option>
+																				<option value="45">K 凯迪拉克</option>
+																				<option value="46">L 力帆</option>
+																				<option value="47">L 林肯</option>
+																				<option value="48">L 路虎</option>
+																				<option value="49">L 铃木</option>
+																				<option value="50">L 陆风</option>
+																				<option value="51">L 雷克萨斯</option>
+																				<option value="52">L 雷诺</option>
+																				<option value="53">M MG</option>
+																				<option value="54">M MINI</option>
+																				<option value="55">M 马自达</option>
+																				<option value="56">N 纳智捷</option>
+																				<option value="57">O 讴歌</option>
+																				<option value="58">Q 启辰</option>
+																				<option value="59">Q 奇瑞</option>
+																				<option value="60">Q 起亚</option>
+																				<option value="61">R 日产</option>
+																				<option value="62">R 荣威</option>
+																				<option value="63">S SMART</option>
+																				<option value="64">S 三菱</option>
+																				<option value="65">S 上汽大通</option>
+																				<option value="66">S 双龙</option>
+																				<option value="67">S 斯威汽车</option>
+																				<option value="68">S 斯巴鲁</option>
+																				<option value="69">S 斯柯达</option>
+																				<option value="70">T 腾势</option>
+																				<option value="71">W 五菱汽车</option>
+																				<option value="72">W 沃尔沃</option>
+																				<option value="73">X 现代</option>
+																				<option value="74">X 雪佛兰</option>
+																				<option value="75">X 雪铁龙</option>
+																				<option value="76">Y 一汽</option>
+																				<option value="77">Y 英菲尼迪</option>
+																				<option value="78">Z 中华</option>
+																				<option value="79">Z 众泰</option>
+																				<option value="80">Z 知豆</option>
+																				<option value="804">H 汉腾</option>
+																				<option value="808">W WEY</option>
+																				<option value="812">B 保时捷</option>
+																				<option value="813">G 广汽吉奥</option>
+																				<option value="814">F 法拉利</option>
+																				<option value="815">H 黄海</option>
+																				<option value="816">L 猎豹汽车</option>
+																				<option value="817">M 迈凯伦</option>
+																				<option value="818">K 开瑞</option>
+																				<option value="819">F 福迪</option>
+																				<option value="820">H 海格</option>
+																				<option value="822">T 特斯拉</option>
+																			</select>
+								</span>
+									<span>
+									<select name="series_id" class="ipt" id="series_id">
+										<option>请选择车型</option>
+									</select>
+								</span>
+								</p>
+								<p class="check-type"><span class="act" data-type="1" style="display: none"><a>全款购车</a><em></em></span></p>
+								<p><input type="text" class="ipt" name="name" id="name" placeholder="您的姓名"></p>
+								<p><input type="text" class="ipt" name="mobile" id="mobile" placeholder="您的电话"></p>
+								<p>
+									<div class="btn btn-block btn-danger" onclick="submit_apply(1)">立即网上报名</div>
+								</p>
+							</div>
+						</div>
+						<div class="hot-brands">
+							<div class="hot-brands-title">
+								特卖会品牌
+							</div>
+							<div class="hot-brands-box">
+								<ul>
+									<li>
+										<p><a href="/brand/1.html" data-id="1" target="_blank"><img src="/uploads/images/20170605/c458e8df2bc2dd75be26fb737ecb1b6b.jpeg" alt="奥迪"></a></p><span><a href="/brand/1.html" data-id="1">奥迪</a></span></li>
+									<li>
+										<p><a href="/brand/2.html" data-id="2" target="_blank"><img src="/uploads/images/20170605/d2bdd17fe44bcdc4a06f9f3ff77caa3c.jpeg" alt="别克"></a></p><span><a href="/brand/2.html" data-id="2">别克</a></span></li>
+									<li>
+										<p><a href="/brand/3.html" data-id="3" target="_blank"><img src="/uploads/images/20170605/4ed0768e857bee505beb5fc5a8a8b796.jpeg" alt="北京汽车"></a></p><span><a href="/brand/3.html" data-id="3">北京汽车</a></span></li>
+									<li>
+										<p><a href="/brand/4.html" data-id="4" target="_blank"><img src="/uploads/images/20170605/cf0265d950c22a67570308f1a3ea8ce3.jpeg" alt="北汽威旺"></a></p><span><a href="/brand/4.html" data-id="4">北汽威旺</a></span></li>
+									<li>
+										<p><a href="/brand/5.html" data-id="5" target="_blank"><img src="/uploads/images/20170605/6a0fb29e7781097d4e15882461240f43.jpeg" alt="北汽幻速"></a></p><span><a href="/brand/5.html" data-id="5">北汽幻速</a></span></li>
+									<li>
+										<p><a href="/brand/6.html" data-id="6" target="_blank"><img src="/uploads/images/20170605/b1dc23de5f4e156463ca233c67375af1.jpeg" alt="北汽新能源"></a></p><span><a href="/brand/6.html" data-id="6">北汽新能源</a></span></li>
+									<li>
+										<p><a href="/brand/7.html" data-id="7" target="_blank"><img src="/uploads/images/20170605/d4c3f87740f5b68f3bd6faef5c5fab15.jpeg" alt="奔腾"></a></p><span><a href="/brand/7.html" data-id="7">奔腾</a></span></li>
+									<li>
+										<p><a href="/brand/8.html" data-id="8" target="_blank"><img src="/uploads/images/20170605/df6df0fd7ba13eac49968d9672351f2e.jpeg" alt="奔驰"></a></p><span><a href="/brand/8.html" data-id="8">奔驰</a></span></li>
+								</ul>
+								<div class="hot-brands-more"><a href="/temaihui">更多特卖会品牌</a></div>
+							</div>
+						</div>
+						<div class="signup-list">
+							<div class="signup-list-box">
+								<ul>
+									<li><span><font color="#FF3938">严**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">李**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">全新胜达(进口)</font></span></li>
+									<li><span><font color="#FF3938">夕**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">索纳塔九</font></span></li>
+									<li><span><font color="#FF3938">王**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5CNG双燃料</font></span></li>
+									<li><span><font color="#FF3938">乔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">索纳塔九</font></span></li>
+									<li><span><font color="#FF3938">史**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">崔**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">领动</font></span></li>
+									<li><span><font color="#FF3938">安**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">名图</font></span></li>
+									<li><span><font color="#FF3938">张**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">起亚K5</font></span></li>
+									<li><span><font color="#FF3938">田**</font></span><span>刚刚预约了特卖会</span><span>关注 <font color="#FF3938">奔驰C级</font></span></li>
+								</ul>
+							</div>
+							<div class="signup-tel">
+								特卖会官方客服热线
+								<font color="#FF3938"><strong>400-808-1710</strong></font> 市话收费标准
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="main-nav">
+					<li>
+						<a href="/">首页</a>
+					</li>
+					<li>
+						<a href="/temaihui">新车特卖会</a>
+					</li>
+					<li>
+						<a href="/xuanche">选车</a>
+					</li>
+					<li>
+						<a href="/news">特卖会资讯</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="container brand-sales">
+		<div class="content-wrap">
+			<div class="content">
+				<div class="select-box">
+					<div class="brand-menu com-menu">
+						<span>品牌<i></i></span>
+						<ul id="">
+							<li class=" on">热门</li>
+							<li>A</li>
+							<li>B</li>
+							<li>C</li>
+							<li>D</li>
+							<li>F</li>
+							<li>G</li>
+							<li>H</li>
+							<li>J</li>
+							<li>K</li>
+							<li>L</li>
+							<li>M</li>
+							<li>N</li>
+							<li>O</li>
+							<li>Q</li>
+							<li>R</li>
+							<li>S</li>
+							<li>T</li>
+							<li>W</li>
+							<li>X</li>
+							<li>Y</li>
+							<li>Z</li>
+						</ul>
+					</div>
+					<div class="brand-cnt com-cnt">
+						<ul class="brand-cnt0" style="display: block;">
+							<li data="62">起亚</li>
+							<li data="113">东风风神</li>
+							<li data="12">现代</li>
+							<li data="1">大众</li>
+							<li data="25">吉利汽车</li>
+							<li data="8">福特</li>
+							<li data="3">丰田</li>
+							<li data="94">众泰</li>
+							<li data="86">海马</li>
+							<li data="163">长安欧尚</li>
+						</ul>
+						<ul class="brand-cnt1" style="display: none;">
+							<li data="33">奥迪</li>
+							<li data="35">阿斯顿·马丁</li>
+							<li data="276">ALPINA</li>
+							<li data="34">阿尔法·罗密欧</li>
+						</ul>
+						<ul class="brand-cnt2" style="display: none;">
+							<li data="14">本田</li>
+							<li data="15">宝马</li>
+							<li data="36">奔驰</li>
+							<li data="13">标致</li>
+							<li data="203">北汽幻速</li>
+							<li data="38">别克</li>
+							<li data="75">比亚迪</li>
+							<li data="231">宝沃</li>
+							<li data="95">奔腾</li>
+							<li data="120">宝骏</li>
+							<li data="208">北汽新能源</li>
+							<li data="40">保时捷</li>
+							<li data="27">北京</li>
+							<li data="143">北汽威旺</li>
+							<li data="271">比速汽车</li>
+							<li data="39">宾利</li>
+						</ul>
+						<ul class="brand-cnt3" style="display: none;">
+							<li data="163">长安欧尚</li>
+							<li data="76">长安</li>
+							<li data="77">长城</li>
+							<li data="79">昌河</li>
+						</ul>
+						<ul class="brand-cnt4" style="display: none;">
+							<li data="113">东风风神</li>
+							<li data="1">大众</li>
+							<li data="165">东风风行</li>
+							<li data="81">东南</li>
+							<li data="41">道奇</li>
+							<li data="259">东风风光</li>
+							<li data="142">东风小康</li>
+							<li data="169">DS</li>
+							<li data="187">东风风度</li>
+							<li data="32">东风</li>
+						</ul>
+						<ul class="brand-cnt5" style="display: none;">
+							<li data="8">福特</li>
+							<li data="3">丰田</li>
+							<li data="96">福田</li>
+							<li data="11">菲亚特</li>
+							<li data="197">福汽启腾</li>
+							<li data="42">法拉利</li>
+						</ul>
+						<ul class="brand-cnt6" style="display: none;">
+							<li data="82">广汽传祺</li>
+							<li data="152">观致</li>
+							<li data="108">广汽吉奥</li>
+						</ul>
+						<ul class="brand-cnt7" style="display: none;">
+							<li data="86">海马</li>
+							<li data="181">哈弗</li>
+							<li data="267">汉腾汽车</li>
+							<li data="91">红旗</li>
+							<li data="87">华泰</li>
+							<li data="220">华颂</li>
+						</ul>
+						<ul class="brand-cnt8" style="display: none;">
+							<li data="25">吉利汽车</li>
+							<li data="46">Jeep</li>
+							<li data="44">捷豹</li>
+							<li data="84">江淮</li>
+							<li data="83">金杯</li>
+							<li data="175">金旅</li>
+							<li data="145">金龙</li>
+						</ul>
+						<ul class="brand-cnt9" style="display: none;">
+							<li data="47">凯迪拉克</li>
+							<li data="9">克莱斯勒</li>
+							<li data="214">凯翼</li>
+							<li data="101">开瑞</li>
+						</ul>
+						<ul class="brand-cnt10" style="display: none;">
+							<li data="49">路虎</li>
+							<li data="52">雷克萨斯</li>
+							<li data="124">理念</li>
+							<li data="53">铃木</li>
+							<li data="10">雷诺</li>
+							<li data="51">林肯</li>
+							<li data="78">猎豹汽车</li>
+							<li data="48">兰博基尼</li>
+							<li data="80">力帆汽车</li>
+							<li data="88">陆风</li>
+							<li data="50">路特斯</li>
+							<li data="54">劳斯莱斯</li>
+							<li data="241">LOCAL MOTORS</li>
+						</ul>
+						<ul class="brand-cnt11" style="display: none;">
+							<li data="58">马自达</li>
+							<li data="56">MINI</li>
+							<li data="20">名爵</li>
+							<li data="57">玛莎拉蒂</li>
+						</ul>
+						<ul class="brand-cnt12" style="display: none;">
+							<li data="130">纳智捷</li>
+						</ul>
+						<ul class="brand-cnt13" style="display: none;">
+							<li data="60">讴歌</li>
+						</ul>
+						<ul class="brand-cnt14" style="display: none;">
+							<li data="62">起亚</li>
+							<li data="26">奇瑞</li>
+							<li data="122">启辰</li>
+						</ul>
+						<ul class="brand-cnt15" style="display: none;">
+							<li data="63">日产</li>
+							<li data="19">荣威</li>
+						</ul>
+						<ul class="brand-cnt16" style="display: none;">
+							<li data="68">三菱</li>
+							<li data="67">斯柯达</li>
+							<li data="45">smart</li>
+							<li data="65">斯巴鲁</li>
+							<li data="269">SWM斯威汽车</li>
+							<li data="173">北汽绅宝</li>
+							<li data="155">上汽大通</li>
+							<li data="162">思铭</li>
+						</ul>
+						<ul class="brand-cnt17" style="display: none;">
+							<li data="133">特斯拉</li>
+						</ul>
+						<ul class="brand-cnt18" style="display: none;">
+							<li data="70">沃尔沃</li>
+							<li data="114">五菱汽车</li>
+							<li data="167">五十铃</li>
+						</ul>
+						<ul class="brand-cnt19" style="display: none;">
+							<li data="12">现代</li>
+							<li data="72">雪铁龙</li>
+							<li data="71">雪佛兰</li>
+						</ul>
+						<ul class="brand-cnt20" style="display: none;">
+							<li data="73">英菲尼迪</li>
+							<li data="110">一汽</li>
+							<li data="111">野马汽车</li>
+							<li data="117">AC Schnitzer</li>
+							<li data="192">潍柴英致</li>
+						</ul>
+						<ul class="brand-cnt21" style="display: none;">
+							<li data="94">众泰</li>
+							<li data="22">中华</li>
+						</ul>
+					</div>
+				</div>
+				<div class="brand-sales-list">
+					<ul>
+						<li class="brand-sale-li">
+							<div class="brand-info">
+								<em class="brand-info-jiao"></em>
+								<div class="brand-info-img">
+									<img src="http://pic.tuanche.com/car/20160421/14612059556755980_s.jpg" class="lazyload">
+								</div>
+								<div class="brand-info-name">
+									江淮汽车
+								</div>
+								<div class="brand-info-detail">
+									<p>
+										本期报名：<span style="font-size: 16px;color: red;">204</span>人
+									</p>
+									<p>特卖会时间：2017年9月9日</p>
+									<p>特卖会地址：河北XX汽车销售服务有限公司</p>
+								</div>
+							</div>
+							<div class="brand-view">
+								<img class="brand-view-img lazyload" src="http://pic.tuanche.com/car/20161103/14781465443116787.jpg">
+								<div class="brand-view-info">
+									<label>热门车型</label>
+									<ul>
+										<li>
+											<a href="" target="_blank">瑞风M5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦A30</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S2mini</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="tuan-go">
+									<a class="tuan-go-link" href="" target="_blank">
+											去团购<em></em>
+										</a>
+								</div>
+							</div>
+						</li>
+						<li class="brand-sale-li">
+							<div class="brand-info">
+								<em class="brand-info-jiao"></em>
+								<div class="brand-info-img">
+									<img src="http://pic.tuanche.com/car/20160421/14612059556755980_s.jpg" class="lazyload">
+								</div>
+								<div class="brand-info-name">
+									江淮汽车
+								</div>
+								<div class="brand-info-detail">
+									<p>
+										本期报名：<span style="font-size: 16px;color: red;">204</span>人
+									</p>
+									<p>特卖会时间：2017年9月9日</p>
+									<p>特卖会地址：河北XX汽车销售服务有限公司</p>
+								</div>
+							</div>
+							<div class="brand-view">
+								<img class="brand-view-img lazyload" src="http://pic.tuanche.com/car/20161103/14781465443116787.jpg">
+								<div class="brand-view-info">
+									<label>热门车型</label>
+									<ul>
+										<li>
+											<a href="" target="_blank">瑞风M5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦A30</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S2mini</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="tuan-go">
+									<a class="tuan-go-link" href="" target="_blank">
+											去团购<em></em>
+										</a>
+								</div>
+							</div>
+						</li>
+						<li class="brand-sale-li">
+							<div class="brand-info">
+								<em class="brand-info-jiao"></em>
+								<div class="brand-info-img">
+									<img src="http://pic.tuanche.com/car/20160421/14612059556755980_s.jpg" class="lazyload">
+								</div>
+								<div class="brand-info-name">
+									江淮汽车
+								</div>
+								<div class="brand-info-detail">
+									<p>
+										本期报名：<span style="font-size: 16px;color: red;">204</span>人
+									</p>
+									<p>特卖会时间：2017年9月9日</p>
+									<p>特卖会地址：河北XX汽车销售服务有限公司</p>
+								</div>
+							</div>
+							<div class="brand-view">
+								<img class="brand-view-img lazyload" src="http://pic.tuanche.com/car/20161103/14781465443116787.jpg">
+								<div class="brand-view-info">
+									<label>热门车型</label>
+									<ul>
+										<li>
+											<a href="" target="_blank">瑞风M5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦A30</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S2mini</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="tuan-go">
+									<a class="tuan-go-link" href="" target="_blank">
+											去团购<em></em>
+										</a>
+								</div>
+							</div>
+						</li>
+						<li class="brand-sale-li">
+							<div class="brand-info">
+								<em class="brand-info-jiao"></em>
+								<div class="brand-info-img">
+									<img src="http://pic.tuanche.com/car/20160421/14612059556755980_s.jpg" class="lazyload">
+								</div>
+								<div class="brand-info-name">
+									江淮汽车
+								</div>
+								<div class="brand-info-detail">
+									<p>
+										本期报名：<span style="font-size: 16px;color: red;">204</span>人
+									</p>
+									<p>特卖会时间：2017年9月9日</p>
+									<p>特卖会地址：河北XX汽车销售服务有限公司</p>
+								</div>
+							</div>
+							<div class="brand-view">
+								<img class="brand-view-img lazyload" src="http://pic.tuanche.com/car/20161103/14781465443116787.jpg">
+								<div class="brand-view-info">
+									<label>热门车型</label>
+									<ul>
+										<li>
+											<a href="" target="_blank">瑞风M5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦A30</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S2mini</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="tuan-go">
+									<a class="tuan-go-link" href="" target="_blank">
+											去团购<em></em>
+										</a>
+								</div>
+							</div>
+						</li>
+						<li class="brand-sale-li">
+							<div class="brand-info">
+								<em class="brand-info-jiao"></em>
+								<div class="brand-info-img">
+									<img src="http://pic.tuanche.com/car/20160421/14612059556755980_s.jpg" class="lazyload">
+								</div>
+								<div class="brand-info-name">
+									江淮汽车
+								</div>
+								<div class="brand-info-detail">
+									<p>
+										本期报名：<span style="font-size: 16px;color: red;">204</span>人
+									</p>
+									<p>特卖会时间：2017年9月9日</p>
+									<p>特卖会地址：河北XX汽车销售服务有限公司</p>
+								</div>
+							</div>
+							<div class="brand-view">
+								<img class="brand-view-img lazyload" src="http://pic.tuanche.com/car/20161103/14781465443116787.jpg">
+								<div class="brand-view-info">
+									<label>热门车型</label>
+									<ul>
+										<li>
+											<a href="" target="_blank">瑞风M5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦A30</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S5</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">和悦</a>
+										</li>
+
+										<li>
+											<a href="" target="_blank">瑞风S2mini</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="tuan-go">
+									<a class="tuan-go-link" href="" target="_blank">
+											去团购<em></em>
+										</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="pagination">
+						<ul>
+							<li class="active"><span>1</span></li>
+							<li><a href="page-2">2</a></li>
+							<li><a href="page-3">3</a></li>
+							<li><a href="page-4">4</a></li>
+							<li><span> ... </span></li>
+							<li class="next-page"><a href="page-2">下一页</a></li>
+							<li><span>共 12 页</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<div class="signup-widget">
+				<div class="signup-widget-title">
+					<span style="font-size: 16px;">看车 比价 买车 逛车博会轻松搞定</span>
+					<div style="font-size: 12px;color: #999;margin-top: 6px;">
+						立即报名预约<span style="color: red;">河北石家庄体育馆车博会</span>
+					</div>
+				</div>
+				<div class="signup-widget-form">
+					<p>
+						<select name="brand" class="ipt">
+								<option>请选择品牌</option>
+								<option>宝马</option>
+							</select>
+					</p>
+					<p>
+						<select name="brand" class="ipt">
+								<option>请选择车型</option>
+								<option>宝马X5</option>
+							</select>
+					</p>
+					<p><input type="text" class="ipt" name="truename" placeholder="您的姓名"></p>
+					<p><input type="text" class="ipt" name="truename" placeholder="您的电话"></p>
+					<div class="btn btn-block btn-danger">立即网上报名</div>
+				</div>
+			</div>
+			<div class="namelist-widget">
+				<h4>最新报名信息</h4>
+				<div class="widget-box">
+					<ul>
+						<li><span class="col"><span style="color: red;">严**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/60.html" target="_blank"><span style="color:#e6002d">起亚K5</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">李**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/73.html" target="_blank"><span style="color:#e6002d">全新胜达(进口)</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">夕**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/73.html" target="_blank"><span style="color:#e6002d">索纳塔九</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">王**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/60.html" target="_blank"><span style="color:#e6002d">起亚K5CNG双燃料</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">乔**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/73.html" target="_blank"><span style="color:#e6002d">索纳塔九</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">史**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/60.html" target="_blank"><span style="color:#e6002d">起亚K5</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">崔**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/73.html" target="_blank"><span style="color:#e6002d">领动</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">安**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/73.html" target="_blank"><span style="color:#e6002d">名图</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">张**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/60.html" target="_blank"><span style="color:#e6002d">起亚K5</a></span></span>
+						</li>
+						<li><span class="col"><span style="color: red;">田**</span> 刚刚预约了车展</span><span class="col">关注 <a href="/brand/8.html" target="_blank"><span style="color:#e6002d">奔驰C级</a></span></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="hot-cars-widget">
+				<h4>热门车型</h4>
+				<div class="hot-cars-box">
+					<ul class="v-menu box-left">
+						<li class="on">全部</li>
+						<li>微型</li>
+						<li>小型</li>
+						<li>紧凑型</li>
+						<li>中型</li>
+						<li>中大型</li>
+						<li>大型</li>
+						<li>SUV</li>
+						<li>MPV</li>
+					</ul>
+					<div class="v-cnt box-right">
+						<ul class="cnt0" style="display: block;">
+							<li>
+								<a target="_blank" href="http://www.haoche.cn/home/Potential?bid=442"><span>1</span><img src="http://img.haoche.cn/car/442.jpg">
+										<p>速腾</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>英朗</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>轩逸</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>卡罗拉</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>朗逸</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>奔驰C级</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>宝马5系</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>奥迪A6L</a>
+							</li>
+						</ul>
+						<ul class="cnt1" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/579.jpg">
+										<p>比亚迪F0</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>宝骏310</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>奔奔</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>丘比特</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>金刚</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>smart forfour</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>云100</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>大众up!</a>
+							</li>
+						</ul>
+						<ul class="cnt2" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/145.jpg">
+										<p>POLO</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>飞度</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>YARiS L 致炫</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>威驰</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>晶锐</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>嘉年华</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>起亚K2</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>悦纳</a>
+							</li>
+						</ul>
+						<ul class="cnt3" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/871.jpg">
+										<p>高尔夫</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>福克斯</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>奥迪A3</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>马自达3 Axela昂克赛拉</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>思域</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>雷凌</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>悦动</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>威朗</a>
+							</li>
+						</ul>
+						<ul class="cnt4" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/634.jpg">
+										<p>天籁</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>帕萨特</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>雅阁</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>奥迪A4L</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>宝马3系</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>君越</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>阿特兹</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>凯迪拉克ATS-L</a>
+							</li>
+						</ul>
+						<ul class="cnt5" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/197.jpg">
+										<p>奔驰E级</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>雷克萨斯ES</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>沃尔沃S90</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>凯迪拉克CT6</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>奥迪A6L</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>捷豹XF</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>林肯大陆</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>皇冠</a>
+							</li>
+						</ul>
+						<ul class="cnt6" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/59.jpg">
+										<p>奔驰S级</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>宝马7系</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>奥迪A8</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>Panamera</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>总裁</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>雷克萨斯LS</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>幻影</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>慕尚</a>
+							</li>
+						</ul>
+						<ul class="cnt7" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/771.jpg">
+										<p>汉兰达</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>哈弗H6</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>传祺GS4</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>途观L</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>锐界</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>博越</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>昂科威</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>荣威RX5</a>
+							</li>
+						</ul>
+						<ul class="cnt8" style="display: none;">
+							<li>
+								<a target="_blank" href=""><span>1</span><img src="http://img.haoche.cn/car/880.jpg">
+										<p>奥德赛</p>
+									</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>2</span>别克GL8</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>3</span>途安</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>4</span>宝骏730</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>5</span>宝马2系旅行车</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>6</span>北汽幻速H3</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>7</span>瑞风</a>
+							</li>
+							<li>
+								<a target="_blank" href=""><span>8</span>菱智</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="bottom-service">
+		<div class="container">
+			<ul>
+				<li>
+					<i class="fa">&#xe624;</i>
+					<h3>低价保证</h3>
+					<p>挑报价最低4S店合作</p>
+				</li>
+				<li>
+					<i class="fa">&#xe660;</i>
+					<h3>车源保证</h3>
+					<p>甄选本地优质正规4S店</p>
+				</li>
+				<li>
+					<i class="fa">&#xe637;</i>
+					<h3>全国联保</h3>
+					<p>正规4S店均可维修保养</p>
+				</li>
+				<li>
+					<i class="fa">&#xe610;</i>
+					<h3>优先提车</h3>
+					<p>享有优先提车权</p>
+				</li>
+				<li>
+					<i class="fa">&#xe680;</i>
+					<h3>售后维权</h3>
+					<p>质量问题，协助解决</p>
+				</li>
+				<li>
+					<i class="fa">&#xe64c;</i>
+					<h3>亿元保障金</h3>
+					<p>买贵赔三倍差价</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="links">
+		<div class="container">
+			<div class="links-title">
+				<h3>热门品牌汽车团购</h3>
+				<span><a href="" target="_blank">更多</a></span>
+			</div>
+			<div class="links-box">
+				<span><a href="" target="_blank">一汽-大众</a></span>
+				<span><a href="" target="_blank">上汽大众</a></span>
+				<span><a href="" target="_blank">北京现代</a></span>
+				<span><a href="" target="_blank">长安福特</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="links">
+		<div class="container">
+			<div class="links-title">
+				<h3>合作伙伴 / 友情链接</h3>
+			</div>
+			<div class="links-box">
+				<span><a href="" target="_blank">一汽-大众</a></span>
+				<span><a href="" target="_blank">上汽大众</a></span>
+				<span><a href="" target="_blank">北京现代</a></span>
+				<span><a href="" target="_blank">长安福特</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+				<span><a href="" target="_blank">东风雪铁龙</a></span>
+				<span><a href="" target="_blank">东风标致</a></span>
+				<span><a href="" target="_blank">通用别克</a></span>
+				<span><a href="" target="_blank">通用雪佛兰</a></span>
+				<span><a href="" target="_blank">广汽本田</a></span>
+				<span><a href="" target="_blank">东风本田</a></span>
+				<span><a href="" target="_blank">广汽丰田</a></span>
+				<span><a href="" target="_blank">一汽丰田</a></span>
+				<span><a href="" target="_blank">上汽荣威</a></span>
+				<span><a href="" target="_blank">上汽名爵</a></span>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="site-info">
+				<dl>
+					<dt><a href="">易行汽车</a></dt>
+					<dd>
+						<p><a href="">品牌大全</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">关于易行</a></dt>
+					<dd>
+						<p><a href="">关于我们</a></p>
+						<p><a href="">联系我们</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">加入易行</a></dt>
+					<dd>
+						<p><a href="">加入我们</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">商务合作</a></dt>
+					<dd>
+						<p><a href="">申请合作</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="">其他</a></dt>
+					<dd>
+						<p><a href="">维权声明</a></p>
+						<p><a href="">我要投诉</a></p>
+					</dd>
+				</dl>
+			</div>
+			<div class="site-contact">
+				<div class="site-weixin"><img src="/static/groupon/pc/images/qrcode.png"></div>
+				<div class="site-tel">
+					<p class="phone">400-808-1710</p>
+					<p><span>周一至周五 9:00-18:00</span></p>
+					<a rel="nofollow" class="btn btn-danger" href="http://wpa.qq.com/msgrd?v=3&uin=2460436177&site=qq&menu=yes" target="_blank"> 在线咨询</a>
+				</div>
+			</div>
+			<div class="site-copyright">
+				<p>Copyright © 2017 河北易之行网络科技有限公司 | 备案/许可证号： 冀ICP备17016416号-1<br>地址：河北省石家庄市裕华区槐安路152号 电话：0311-66561958</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+	<div class="rollbar">
+		<ul>
+			<li>
+				<a href="">
+                <i class="fa">&#xe642;</i>
+            </a>
+				<h6 class="qrcode"><img src="http://www.yixingauto.com/static/groupon/pc/images/qrcode.png"><i></i></h6>
+			</li>
+			<li>
+				<a href="">
+                <i class="fa">&#xe606;</i>
+            </a>
+				<h6>客服<i></i></h6>
+			</li>
+			<li class="go-top">
+				<a href="javascript:(scrollTo());">
+                <i class="fa">&#xe76e;</i>
+            </a>
+				<h6>去顶部<i></i></h6>
+			</li>
+		</ul>
+	</div>
+	<script src="/static/libs/layer/layer.js"></script>
+	<script type="text/javascript" src="/static/js/topic.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?424c54733e94013660c18c69dcf1a88f";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript" src="/static/js/common.js"></script>
+	<script type="text/javascript">
+		var topic_id = 0;
+		$(document).ready(function () {
+			tabSwift(".brand-menu", ".brand-cnt");
+			tabSwitch(".v-menu", ".v-cnt", ".cnt");
+			$(".brand-sales-list ul").children(".brand-sale-li").hover(function () {
+				$(this).addClass("cur");
+			}, function () {
+				$(this).removeClass("cur");
+			});
+			$('.main-nav').find('li:eq(1)').addClass('active');
+		})
+	</script>
+</body>
+
+</html>
